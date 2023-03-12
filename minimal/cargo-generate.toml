@@ -4,7 +4,7 @@ cargo_generate_version = "0.18.1"
 [placeholders]
 project-description = { type = "string", prompt = "Project Description" }
 dynamic-linking = { type = "bool", prompt = "Dynamic Linking", default = true }
-linker = { type = "string", promt = "Linker", choices = [
+linker = { type = "string", prompt = "Linker", choices = [
 "default",
 "lld",
 ], default = "default" }
