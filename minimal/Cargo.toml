@@ -6,8 +6,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-{% if fast-compile == "none" %}bevy = "0.8"
-{% else %}bevy = { version = "0.8", features = ["dynamic"] }{% endif %}
+{% if dynamic-linking %}bevy = { version = "0.10", features = ["dynamic_linking"] }
+{% else %}bevy = "0.10"{% endif %}
 
 # Enable a small amount of optimization in debug mode
 [profile.dev]
